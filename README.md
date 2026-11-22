@@ -83,6 +83,10 @@ Download the file for your platform and run it. No installer, no runtime, one fi
   ```
   winget install SnlperStripes.ClaudeAccountSwitcher
   ```
+  Or with [Scoop](https://scoop.sh):
+  ```
+  scoop install https://raw.githubusercontent.com/SnlperStripes/claude-account-switcher/main/packaging/scoop/claude-account-switcher.json
+  ```
 - **macOS:** [`claude-account-switcher-macos`](https://github.com/SnlperStripes/claude-account-switcher/releases/latest/download/claude-account-switcher-macos) (universal). The first start asks once whether it may read "Claude Safe Storage" from your keychain; that is the key Claude uses to encrypt its sign-in. Builds in CI, not yet tested on a real Mac. Reports welcome.
 - **Linux (beta), x64:** [`claude-account-switcher-linux-amd64`](https://github.com/SnlperStripes/claude-account-switcher/releases/latest/download/claude-account-switcher-linux-amd64). On arm64, use [`claude-account-switcher-linux-arm64`](https://github.com/SnlperStripes/claude-account-switcher/releases/latest/download/claude-account-switcher-linux-arm64) instead. It needs the official Claude Desktop for Linux beta (Ubuntu 22.04+ or Debian 12+, installed from Anthropic's apt repository as `claude-desktop`, see [Claude's Linux guide](https://code.claude.com/docs/en/desktop-linux)). Then run `chmod +x claude-account-switcher-linux-amd64` in the folder you saved it to, and start it.
   - The tray uses the AppIndicator (StatusNotifierItem) protocol, which Ubuntu's own desktop and KDE Plasma support. On plain GNOME, install the "AppIndicator and KStatusNotifierItem Support" extension.

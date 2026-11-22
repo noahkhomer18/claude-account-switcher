@@ -1,0 +1,29 @@
+{
+    "version": "0.5.2",
+    "description": "Switch the Claude desktop app between accounts in one click.",
+    "homepage": "https://github.com/SnlperStripes/claude-account-switcher",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SnlperStripes/claude-account-switcher/releases/download/v0.5.2/claude-account-switcher-windows-amd64.exe",
+            "hash": "23caafbcf5649a5081b315dc1b5065a4618e26abb777b8bc053f0e850eabe8f8"
+        }
+    },
+    "bin": [
+        [
+            "claude-account-switcher-windows-amd64.exe",
+            "claude-account-switcher"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SnlperStripes/claude-account-switcher/releases/download/v$version/claude-account-switcher-windows-amd64.exe",
+                "hash": {
+                    "url": "$url.sha256"
+                }
+            }
+        }
+    }
+}
